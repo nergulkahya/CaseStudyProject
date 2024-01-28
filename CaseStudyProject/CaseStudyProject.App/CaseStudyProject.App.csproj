@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ev0s2toj.sg2~" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CaseStudyProject.Toolbox\CaseStudyProject.Toolbox.csproj" />
   </ItemGroup>
 

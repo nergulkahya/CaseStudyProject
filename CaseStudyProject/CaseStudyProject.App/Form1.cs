@@ -1,5 +1,6 @@
 using CaseStudyProject.Toolbox.RandomGenerateCode;
 using CaseStudyProject.Toolbox.ReceiptParserJson;
+using Newtonsoft.Json.Linq;
 
 namespace CaseStudyProject.App
 {
@@ -18,7 +19,12 @@ namespace CaseStudyProject.App
 
         private void FrmGenerateCode_Load(object sender, EventArgs e)
         {
-            var guidCodeList = GenerateRandom.GenerateRandomCode();
+           // DenemeJsonConverter.DenemeJsonConverter2();
+            JsonParser.ResultJson();
+
+        // JSON verisini JObject'e çevir
+
+        var guidCodeList = GenerateRandom.GenerateRandomCode();
             foreach (var item in guidCodeList)
             {
                 lstCodeList.Items.Add(item);

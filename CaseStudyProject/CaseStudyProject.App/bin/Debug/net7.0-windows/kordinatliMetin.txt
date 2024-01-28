@@ -1,0 +1,5 @@
+Metin: Ürün Adı: Elma
+Miktar: 2
+Fiyat: 5.0 TL
+, Kordinatlar: (10,20)-(100,80)
+Metin: Meyve, Kordinatlar: (120,20)-(200,80)
