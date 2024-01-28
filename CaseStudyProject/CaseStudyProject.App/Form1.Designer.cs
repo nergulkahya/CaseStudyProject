@@ -1,6 +1,6 @@
 ﻿namespace CaseStudyProject.App
 {
-    partial class Form1
+    partial class FrmGenerateCode
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,34 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRandomCode = new System.Windows.Forms.Button();
+            this.lstCodeList = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // btnRandomCode
+            // lstCodeList
             // 
-            this.btnRandomCode.Location = new System.Drawing.Point(129, 80);
-            this.btnRandomCode.Name = "btnRandomCode";
-            this.btnRandomCode.Size = new System.Drawing.Size(75, 23);
-            this.btnRandomCode.TabIndex = 0;
-            this.btnRandomCode.Text = "Code Üret";
-            this.btnRandomCode.UseVisualStyleBackColor = true;
-            this.btnRandomCode.Click += new System.EventHandler(this.btnRandomCode_Click);
+            this.lstCodeList.FormattingEnabled = true;
+            this.lstCodeList.ItemHeight = 15;
+            this.lstCodeList.Location = new System.Drawing.Point(12, 67);
+            this.lstCodeList.Name = "lstCodeList";
+            this.lstCodeList.Size = new System.Drawing.Size(204, 364);
+            this.lstCodeList.TabIndex = 1;
             // 
-            // Form1
+            // FrmGenerateCode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnRandomCode);
-            this.Name = "Form1";
-            this.Text = "txtGenerateCode";
+            this.Controls.Add(this.lstCodeList);
+            this.Name = "FrmGenerateCode";
+            this.Text = "GenerateCode";
+            this.Load += new System.EventHandler(this.FrmGenerateCode_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Button btnRandomCode;
+        private ListBox lstCodeList;
     }
 }

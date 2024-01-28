@@ -3,27 +3,27 @@ using CaseStudyProject.Toolbox.ReceiptParserJson;
 
 namespace CaseStudyProject.App
 {
-    public partial class Form1 : Form
+    public partial class FrmGenerateCode : Form
     {
-        public Form1()
+        public FrmGenerateCode()
         {
             InitializeComponent();
         }
 
         private void btnRandomCode_Click(object sender, EventArgs e)
         {
-
           // JsonParser.ResultJson();
-            var guidCodeList= GenerateRandom.GenerateRandomCode();
-
-
-            Console.ReadLine();
-            
+           
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void FrmGenerateCode_Load(object sender, EventArgs e)
         {
+            var guidCodeList = GenerateRandom.GenerateRandomCode();
+            foreach (var item in guidCodeList)
+            {
+                lstCodeList.Items.Add(item);
 
+            }
         }
     }
 }

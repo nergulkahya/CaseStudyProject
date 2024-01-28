@@ -17,7 +17,6 @@ namespace CaseStudyProject.Toolbox.RandomGenerateCode
 
             string charList = "ACDEFGHKLMNPRTXYZ234579";
             List<string> randomCodeCharList = new List<string>();
-            List<string> randomCodeCharList2 = new List<string>();
             Random random = new Random();
             while (randomCodeCharList.Count < 1000)
             {
@@ -30,7 +29,7 @@ namespace CaseStudyProject.Toolbox.RandomGenerateCode
                 bool verify = RandomCodeVerify(randomCodeCharList, randomCode);//Dogrulamadan sonra sonuc true veya false döner 
                 if (verify)
                 {
-                    randomCodeCharList2.Add(randomCode);
+                    randomCodeCharList.Add(randomCode);
                 }
             }
             return randomCodeCharList;
@@ -67,39 +66,38 @@ namespace CaseStudyProject.Toolbox.RandomGenerateCode
         }
 
         #region alternatif
-        public static List<string> GenerateRandomCode2()
-        {
+        ////public static List<string> GenerateRandomCode2()
+        ////{
 
-            string charList = "ACDEFGHKLMNPRTXYZ234579";
-            List<string> randomCodeCharList = new List<string>();
-            List<string> randomCodeCharList2 = new List<string>();
-            Random random = new Random();
-            int guidSayac = 0;
-            while (randomCodeCharList.Count < 1000)
-            {
-                var guid = Guid.NewGuid().ToString("N").ToUpper();
-                string randomCode = string.Empty;
+        ////    string charList = "ACDEFGHKLMNPRTXYZ234579";
+        ////    List<string> randomCodeCharList = new List<string>();
+        ////    Random random = new Random();
+        ////    int guidSayac = 0;
+        ////    while (randomCodeCharList.Count < 1000)
+        ////    {
+        ////        var guid = Guid.NewGuid().ToString("N").ToUpper();
+        ////        string randomCode = string.Empty;
 
-                while (randomCode.Length < 8)
-                {
+        ////        while (randomCode.Length < 8)
+        ////        {
 
-                    if (charList.Contains(guid[guidSayac]))
-                    {
-                        randomCode = randomCode + guid[guidSayac];
+        ////            if (charList.Contains(guid[guidSayac]))
+        ////            {
+        ////                randomCode = randomCode + guid[guidSayac];
 
-                    }
-                    guidSayac++;
-                }
-                #region verify fonksiyonu ile benzer şekilde çalışır biri char kontrol ederken biri string olarak kontrol eder...
-                if (!randomCodeCharList.Contains(randomCode))
-                {
-                    randomCodeCharList.Add(randomCode);
-                    randomCode = string.Empty;
-                }
-                #endregion
-            }
-            return randomCodeCharList;
-        }
+        ////            }
+        ////            guidSayac++;
+        ////        }
+        ////        #region verify fonksiyonu ile benzer şekilde çalışır biri char kontrol ederken biri string olarak kontrol eder...
+        ////        if (!randomCodeCharList.Contains(randomCode))
+        ////        {
+        ////            randomCodeCharList.Add(randomCode);
+                    
+        ////        }
+        ////        #endregion
+        ////    }
+        ////    return randomCodeCharList;
+        ////}
 
         #endregion
     }

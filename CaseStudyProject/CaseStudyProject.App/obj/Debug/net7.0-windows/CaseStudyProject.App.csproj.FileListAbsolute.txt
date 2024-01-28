@@ -6,7 +6,6 @@ D:\PROJECTS\CaseStudyProject\CaseStudyProject\CaseStudyProject.App\bin\Debug\net
 D:\PROJECTS\CaseStudyProject\CaseStudyProject\CaseStudyProject.App\bin\Debug\net7.0-windows\CaseStudyProject.Toolbox.dll
 D:\PROJECTS\CaseStudyProject\CaseStudyProject\CaseStudyProject.App\bin\Debug\net7.0-windows\CaseStudyProject.Toolbox.pdb
 D:\PROJECTS\CaseStudyProject\CaseStudyProject\CaseStudyProject.App\obj\Debug\net7.0-windows\CaseStudyProject.App.csproj.AssemblyReference.cache
-D:\PROJECTS\CaseStudyProject\CaseStudyProject\CaseStudyProject.App\obj\Debug\net7.0-windows\CaseStudyProject.App.Form1.resources
 D:\PROJECTS\CaseStudyProject\CaseStudyProject\CaseStudyProject.App\obj\Debug\net7.0-windows\CaseStudyProject.App.csproj.GenerateResource.cache
 D:\PROJECTS\CaseStudyProject\CaseStudyProject\CaseStudyProject.App\obj\Debug\net7.0-windows\CaseStudyProject.App.GeneratedMSBuildEditorConfig.editorconfig
 D:\PROJECTS\CaseStudyProject\CaseStudyProject\CaseStudyProject.App\obj\Debug\net7.0-windows\CaseStudyProject.App.AssemblyInfoInputs.cache
@@ -19,3 +18,4 @@ D:\PROJECTS\CaseStudyProject\CaseStudyProject\CaseStudyProject.App\obj\Debug\net
 D:\PROJECTS\CaseStudyProject\CaseStudyProject\CaseStudyProject.App\obj\Debug\net7.0-windows\CaseStudyProject.App.genruntimeconfig.cache
 D:\PROJECTS\CaseStudyProject\CaseStudyProject\CaseStudyProject.App\obj\Debug\net7.0-windows\ref\CaseStudyProject.App.dll
 D:\PROJECTS\CaseStudyProject\CaseStudyProject\CaseStudyProject.App\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+D:\PROJECTS\CaseStudyProject\CaseStudyProject\CaseStudyProject.App\obj\Debug\net7.0-windows\CaseStudyProject.App.FrmGenerateCode.resources
