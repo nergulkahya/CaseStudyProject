@@ -28,33 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lstCodeList = new System.Windows.Forms.ListBox();
-            this.SuspendLayout();
+            lstCodeList = new ListBox();
+            btnCode = new Button();
+            SuspendLayout();
             // 
             // lstCodeList
             // 
-            this.lstCodeList.FormattingEnabled = true;
-            this.lstCodeList.ItemHeight = 15;
-            this.lstCodeList.Location = new System.Drawing.Point(12, 67);
-            this.lstCodeList.Name = "lstCodeList";
-            this.lstCodeList.Size = new System.Drawing.Size(204, 364);
-            this.lstCodeList.TabIndex = 1;
+            lstCodeList.FormattingEnabled = true;
+            lstCodeList.ItemHeight = 15;
+            lstCodeList.Location = new Point(12, 67);
+            lstCodeList.Name = "lstCodeList";
+            lstCodeList.Size = new Size(204, 364);
+            lstCodeList.TabIndex = 1;
+            // 
+            // btnCode
+            // 
+            btnCode.Location = new Point(12, 21);
+            btnCode.Name = "btnCode";
+            btnCode.Size = new Size(204, 23);
+            btnCode.TabIndex = 2;
+            btnCode.Text = "Kod Üret";
+            btnCode.UseVisualStyleBackColor = true;
+            btnCode.Click += btnCode_Click;
             // 
             // FrmGenerateCode
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lstCodeList);
-            this.Name = "FrmGenerateCode";
-            this.Text = "GenerateCode";
-            this.Load += new System.EventHandler(this.FrmGenerateCode_Load);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoValidate = AutoValidate.Disable;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnCode);
+            Controls.Add(lstCodeList);
+            Name = "FrmGenerateCode";
+            Text = "GenerateCode";
+            Load += FrmGenerateCode_Load;
+            ResumeLayout(false);
         }
 
         #endregion
         private ListBox lstCodeList;
+        private Button btnCode;
     }
 }

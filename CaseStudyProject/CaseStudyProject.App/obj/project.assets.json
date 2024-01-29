@@ -14,19 +14,6 @@
             "related": ".xml"
           }
         }
-      },
-      "CaseStudyProject.Toolbox/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "compile": {
-          "bin/placeholder/CaseStudyProject.Toolbox.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CaseStudyProject.Toolbox.dll": {}
-        }
       }
     }
   },
@@ -60,36 +47,31 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
-    },
-    "CaseStudyProject.Toolbox/1.0.0": {
-      "type": "project",
-      "path": "../CaseStudyProject.Toolbox/CaseStudyProject.Toolbox.csproj",
-      "msbuildProject": "../CaseStudyProject.Toolbox/CaseStudyProject.Toolbox.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
-      "CaseStudyProject.Toolbox >= 1.0.0"
+      "Newtonsoft.Json >= 13.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nergu\\.nuget\\packages\\": {},
+    "C:\\Users\\nergul.kahya\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PROJECTS\\CaseStudyProject\\CaseStudyProject\\CaseStudyProject.App\\CaseStudyProject.App.csproj",
+      "projectUniqueName": "C:\\Users\\nergul.kahya\\Desktop\\CaseStudyProject\\CaseStudyProject\\CaseStudyProject.App\\CaseStudyProject.App.csproj",
       "projectName": "CaseStudyProject.App",
-      "projectPath": "D:\\PROJECTS\\CaseStudyProject\\CaseStudyProject\\CaseStudyProject.App\\CaseStudyProject.App.csproj",
-      "packagesPath": "C:\\Users\\nergu\\.nuget\\packages\\",
-      "outputPath": "D:\\PROJECTS\\CaseStudyProject\\CaseStudyProject\\CaseStudyProject.App\\obj\\",
+      "projectPath": "C:\\Users\\nergul.kahya\\Desktop\\CaseStudyProject\\CaseStudyProject\\CaseStudyProject.App\\CaseStudyProject.App.csproj",
+      "packagesPath": "C:\\Users\\nergul.kahya\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nergul.kahya\\Desktop\\CaseStudyProject\\CaseStudyProject\\CaseStudyProject.App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\nergu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nergul.kahya\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -104,11 +86,7 @@
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
-          "projectReferences": {
-            "D:\\PROJECTS\\CaseStudyProject\\CaseStudyProject\\CaseStudyProject.Toolbox\\CaseStudyProject.Toolbox.csproj": {
-              "projectPath": "D:\\PROJECTS\\CaseStudyProject\\CaseStudyProject\\CaseStudyProject.Toolbox\\CaseStudyProject.Toolbox.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -120,6 +98,12 @@
     "frameworks": {
       "net7.0-windows7.0": {
         "targetAlias": "net7.0-windows",
+        "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -139,7 +123,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

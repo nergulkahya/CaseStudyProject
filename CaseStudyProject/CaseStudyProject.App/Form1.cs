@@ -11,25 +11,21 @@ namespace CaseStudyProject.App
             InitializeComponent();
         }
 
-        private void btnRandomCode_Click(object sender, EventArgs e)
-        {
-          // JsonParser.ResultJson();
-           
-        }
+       
 
         private void FrmGenerateCode_Load(object sender, EventArgs e)
         {
-           // DenemeJsonConverter.DenemeJsonConverter2();
             JsonParser.ResultJson();
+        }
 
-        // JSON verisini JObject'e çevir
-
-        var guidCodeList = GenerateRandom.GenerateRandomCode();
-            foreach (var item in guidCodeList)
+        private void btnCode_Click(object sender, EventArgs e)
+        {
+            string code = GenerateRandom.GenerateRandomCode();
+            if (code != "")
             {
-                lstCodeList.Items.Add(item);
-
+                lstCodeList.Items.Add(code);
             }
+            
         }
     }
 }
